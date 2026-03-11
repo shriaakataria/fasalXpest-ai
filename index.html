@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FasalXpert AI Platform</title>
+
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+<header>
+    <h1>🌾 FasalXpert</h1>
+    <p>AI Powered Smart Farming Assistant</p>
+</header>
+
+<div class="dashboard">
+
+
+<!-- Disease Detection -->
+<div class="card">
+    <h2>🌿 Crop Disease Detection</h2>
+
+    <input type="file" id="imageInput">
+
+    <button onclick="detectDisease()">Detect Disease</button>
+
+    <div id="result"></div>
+</div>
+
+<!-- AI Assistant -->
+<div class="card">
+    <h2>🤖 AI Farming Assistant</h2>
+
+    <input type="text" id="question" placeholder="Ask a farming question">
+
+    <button onclick="askAI()">Ask</button>
+
+    <div id="aiAnswer"></div>
+</div>
+
+<!-- Voice Assistant -->
+<div class="card">
+    <h2>🎤 Voice Assistant</h2>
+
+    <button onclick="startVoice()">Start Voice</button>
+
+    <div id="voiceText"></div>
+</div>
+
+<!-- Weather -->
+<div class="card">
+    <h2>🌤 Weather Information</h2>
+
+    <button onclick="getWeather()">Check Weather</button>
+
+    <div id="weather"></div>
+</div>
+
+<!-- Soil Recommendation -->
+<div class="card">
+
+<h2>🌱 Soil → Crop Recommendation</h2>
+
+<select id="soilType">
+
+<option value="Black Soil">Black Soil</option>
+<option value="Red Soil">Red Soil</option>
+<option value="Alluvial Soil">Alluvial Soil</option>
+<option value="Sandy Soil">Sandy Soil</option>
+
+</select>
+
+<button onclick="recommendCrop()">Recommend Crop</button>
+
+<div id="cropResult"></div>
+
+</div>
+
+<!-- Government Schemes -->
+<div class="card">
+
+<h2>🏛 Government Schemes</h2>
+
+<button onclick="getSchemes()">Show Schemes</button>
+
+<div id="schemes"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
